@@ -32,10 +32,6 @@ body{
 .gridcontainer{
   display: grid;
   grid-template: 220px 260px / 320px 320px;
-  margin-top: 170px;
-  margin-left: 400px; 
-  margin-bottom: 170px;
-  margin: 170px auto 170px 400px;
 }
 
 .joincommunity{
@@ -125,7 +121,6 @@ button{
 
 @media (max-width: 500px) {
   .gridcontainer {
-    margin: 70px 30px;
     grid-template: 260px 225px 225px / auto;
     }
   
