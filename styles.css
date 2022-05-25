@@ -17,6 +17,11 @@ html {
   margin-top: auto;
   margin-bottom: auto;
   }
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  align-items: center;}
 
 body{
   font-family: Karla;
