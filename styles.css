@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --var-cyan: hsl(179, 62%, 43%);
+  --var-bright-yellow: hsl(71, 73%, 54%);
+  --var-light-gray: hsl(204, 43%, 93%);
+  --var-grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+  box-sizing: border-box;
+ 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+
+body{
+  font-family: Karla;
+  font-size: 16px;
+  background: var(--var-light-gray);
+}
+
+.gridcontainer{
+  display: grid;
+  grid-template: 220px 260px / 320px 320px;
+  margin-top: 170px;
+  margin-left: 400px; 
+  margin-bottom: 170px;
+  margin: 170px auto 170px 400px;
+}
+
+.joincommunity{
+  grid-column: span 2;
+  background: white;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  padding: 45px 40px;
+  box-shadow: 0 -8px 40px lightgray;
+}
+
+.joincommunity p{
+  
+  font-weight: bold;
+}
+
+
+.subscription{
+  background: var(--var-cyan);
+  height: 100%;
+  padding: 45px 40px;
+  border-radius: 0 0 0 10px;
+}
+.subscription p{
+  margin-top: 10px;
+}
+.whyus{
+  background: #4abebd ;
+  height: 100%;
+  padding: 45px 30px;
+  border-radius: 0 0 10px 0;
+  line-height: 1.2;
+}
+.whyus p{
+  margin-top: 20px;
+  padding-right: 45px;
+}
+
+
+p{
+  color: white;
+}
+
+h1{
+  color: var(--var-cyan);
+  font-size: 26px;
+}
+
+#thirtyday {
+  color: var(--var-bright-yellow);
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  
+}
+h2{
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#dollar{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+.grey{
+  color: var(--var-light-gray);
+}
+
+button{
+  color: white;
+  background: var(--var-bright-yellow);
+  font-size: 15px;
+  width: 100%;
+  height: 47px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  box-shadow: 0px 8px 60px gray;
+}
+
+/* mobile version */
+
+@media (max-width: 500px) {
+  .gridcontainer {
+    margin: 70px 30px;
+    grid-template: 260px 225px 225px / auto;
+    }
+  
+  .joincommunity {
+    grid-column: span 1 ;
+    padding: 25px 25px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  #thirtyday {
+    font-size: 15px;
+  }
+  .subscription{
+    border-radius: 0;
+    padding: 25px 25px;
+  }
+  
+  .whyus{
+    border-radius: 0 0 6px 6px;
+    padding: 25px 25px;
+  }
+  
+  h1, h2{
+    font-size: 19px;
+  }
+  
+  .joincommunity p{
+    line-height: 1.9;
+  }
+  p{
+    font-size: 13px;
+  }
+  
+  .whyus p{
+    line-height: 1.5;
+  }
+}
